@@ -1,0 +1,17 @@
+{
+  "name": "WhatsApp Background",
+  "version": "0",
+  "description": "Change background of WhatsApp WEB",
+  "background": {"page": "background.html"},
+  "manifest_version": 2,
+  "browser_action": {
+    "name": "Manipulate DOM",
+    "icons": ["icon.png"],
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [ {
+    "js": [ "jquery-2.0.2.min.js", "background.js" ],
+    "css": ["customStyles.css"],
+    "matches": [ "https://web.whatsapp.com/"]
+  }]
+}
