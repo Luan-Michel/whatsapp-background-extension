@@ -4,6 +4,9 @@
   "description": "Change background of WhatsApp WEB",
   "background": {"page": "background.html"},
   "manifest_version": 2,
+  "web_accessible_resources": [
+    "images/image.jpg"
+  ],
   "browser_action": {
     "name": "Manipulate DOM",
     "icons": ["icon.png"],
